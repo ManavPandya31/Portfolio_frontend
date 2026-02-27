@@ -75,12 +75,12 @@ useEffect(() => {
           Hire Me
         </button>
 
-        <button
+        {/* <button
           className="theme-btn"
           onClick={() => setDarkMode(!darkMode)}
         >
           {darkMode ? "Light ☀️" : "Dark 🌙"}
-        </button>
+        </button> */}
 
       </div>
     </nav>

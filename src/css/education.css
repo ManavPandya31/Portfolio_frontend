@@ -84,6 +84,9 @@
   gap: 8px;
   font-size: 0.85rem;
   color: #6e7681;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
 }
 
 .location-icon {
@@ -116,6 +119,12 @@
 }
 
 @media (max-width: 1023px) {
+
+  edu-location {
+    justify-content: flex-start;
+    text-align: left;
+  }
+
   .education-section {
     padding: 100px 6%;
   }
@@ -125,7 +134,7 @@
     gap: 30px;
   }
 
-  .education-card {
+    .education-card {
     padding: 30px;
   }
 
@@ -135,6 +144,18 @@
 }
 
 @media (max-width: 767px) {
+
+   .edu-location {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+  }
+
+  .location-icon {
+    font-size: 12px;
+  }
+
   .education-section {
     padding: 80px 5%;
   }
@@ -155,6 +176,13 @@
 }
 
 @media (max-width: 480px) {
+
+    .edu-location {
+    flex-direction: column;
+    gap: 5px;
+    font-size: 0.75rem;
+  }
+  
   .education-section {
     padding: 70px 5%;
   }

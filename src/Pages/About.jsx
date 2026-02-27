@@ -21,7 +21,7 @@ const About = () => (
         </p>
         <p>
           With a Solid Academic Background in Computer Applications and
-          Practical Internship experience, I'm Eager To Contribute To Impactful
+          Practical experience, I'm Eager To Contribute To Impactful
           Projects and Continue Growing as a Developer.
         </p>
       </div>
