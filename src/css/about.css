@@ -1,0 +1,138 @@
+#about {
+  padding: 120px 10%;
+  background: #0d1117;
+  color: #e6edf3;
+}
+
+.number-prefix {
+  font-family: monospace;
+  color: var(--accent-green);
+  font-size: 1rem;
+}
+
+.section-heading {
+  font-size: 2.5rem;
+  margin: 10px 0 50px;
+  font-weight: 700;
+}
+
+.section-heading span {
+  color: var(--primary-cyan);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-text p {
+  font-size: 1rem;
+  line-height: 1.9;
+  margin-bottom: 20px;
+  color: #c9d1d9;
+}
+
+.about-text b {
+  color: #ffffff;
+}
+
+.highlight {
+  color: var(--accent-green);
+  font-weight: 600;
+}
+
+.about-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-box {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 18px 22px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.info-box:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-cyan);
+  box-shadow: 0 10px 30px rgba(0, 255, 200, 0.15);
+}
+
+.info-box span:first-child {
+  color: var(--primary-cyan);
+  font-weight: 600;
+}
+
+.info-box span:last-child {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+  #about {
+    padding: 100px 6%;
+  }
+
+  .about-grid {
+    gap: 40px;
+  }
+
+  .section-heading {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #about {
+    padding: 80px 5%;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;   /* 🔥 stack vertically */
+    gap: 40px;
+  }
+
+  .section-heading {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .about-text p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+  }
+
+  .info-box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .info-box span:last-child {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-heading {
+    font-size: 1.7rem;
+  }
+
+  .about-text p {
+    font-size: 0.9rem;
+  }
+
+  .info-box {
+    padding: 15px;
+  }
+}

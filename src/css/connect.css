@@ -1,0 +1,155 @@
+/* #contact{
+  background: var(--bg-color);
+  color: var(--text-color);
+} */
+
+.contact-section {
+  padding: 120px 10%;
+  background: #0d1117;
+  color: #e6edf3;
+  text-align: center;
+}
+
+.contact-subtitle {
+  color: #8b949e;
+  margin: 20px 0 60px;
+  font-size: 1rem;
+}
+
+.contact-container {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+
+  padding: 18px 20px;
+  font-size: 1rem;
+  color: #ffffff;
+
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #6e7681;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--primary-cyan);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.submit-btn {
+  margin-top: 10px;
+  background: linear-gradient(135deg, var(--primary-cyan), var(--accent-green));
+  color: #000;
+  border: none;
+  padding: 16px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+  opacity: 0.9;
+}
+
+.footer-socials {
+  margin-top: 70px;
+  padding-top: 35px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-socials a {
+  color: #8b949e;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: 0.2s ease;
+}
+
+.footer-socials a:hover {
+  color: var(--primary-cyan);
+}
+
+@media (max-width: 1024px) {
+  .contact-section {
+    padding: 100px 6%;
+  }
+
+  .contact-subtitle {
+    margin: 15px 0 50px;
+  }
+
+  .footer-socials {
+    gap: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 80px 5%;
+  }
+
+  .contact-subtitle {
+    font-size: 0.95rem;
+    margin: 15px 0 40px;
+  }
+
+  .contact-form {
+    gap: 18px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 14px 16px;
+    font-size: 0.95rem;
+    border-radius: 10px;
+  }
+
+  .submit-btn {
+    padding: 14px;
+    font-size: 0.95rem;
+  }
+
+  .footer-socials {
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 50px;
+    padding-top: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 12px 14px;
+    font-size: 0.9rem;
+  }
+
+  .submit-btn {
+    font-size: 0.9rem;
+  }
+}

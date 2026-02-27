@@ -1,0 +1,252 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 10%;
+  background:
+    radial-gradient(
+      circle at 20% 30%,
+      rgba(0, 255, 200, 0.08),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 80% 70%,
+      rgba(0, 200, 255, 0.08),
+      transparent 40%
+    ),
+    #0d1117;
+
+  position: relative;
+  overflow: hidden;
+  /* background: var(--bg-color);
+  color: var(--text-color); */
+}
+
+.hero h1,
+.hero h2,
+.hero .description,
+.hero-btns {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1s ease forwards;
+}
+
+.hero h1 {
+  animation-delay: 0.3s;
+}
+.hero h2 {
+  animation-delay: 0.6s;
+}
+.hero .description {
+  animation-delay: 0.9s;
+}
+.hero-btns {
+  animation-delay: 1.2s;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hi-text {
+  color: var(--accent-green);
+  font-family: monospace;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  overflow: hidden;
+  display: inline-block;
+  white-space: nowrap;
+  border-right: 2px solid var(--accent-green);
+  width: 0;
+  animation:
+    typing 2s steps(12) forwards,
+    blink 0.8s infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%; 
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.name {
+  font-size: 5rem;
+  margin: 15px 0;
+  font-weight: 800;
+  background: linear-gradient(
+    90deg,
+    #ffffff,
+    var(--primary-cyan),
+    var(--accent-green)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.name {
+  animation: floatText 4s ease-in-out infinite alternate;
+}
+
+@keyframes floatText {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+.title {
+  color: #c9d1d9;
+  font-weight: 400;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.description {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #8b949e;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.hero-btns {
+  margin-top: 40px;
+  display: flex;
+  gap: 25px;
+}
+
+.btn-cyan {
+  padding: 14px 32px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  background: linear-gradient(135deg, var(--primary-cyan), var(--accent-green));
+  color: #000;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0, 255, 200, 0.3);
+}
+
+.btn-cyan:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(0, 255, 200, 0.5);
+}
+
+.btn-outline {
+  position: relative;
+  padding: 14px 34px;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 255, 200, 0.4);
+  background: transparent;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.35s ease;
+  backdrop-filter: blur(5px);
+}
+  
+.btn-outline:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 255, 200, 0.15),
+    rgba(0, 200, 255, 0.15)
+  );
+  border-color: var(--primary-cyan);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 255, 200, 0.25);
+}
+
+.btn-outline:active {
+  transform: translateY(0px);
+  box-shadow: 0 5px 15px rgba(0, 255, 200, 0.2);
+}
+
+@media (max-width: 1024px) {
+  .name {
+    font-size: 3.8rem;
+  }
+
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .description {
+    max-width: 550px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .hero {
+    padding: 0 5%;
+  }
+
+  .hi-text {
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+  }
+
+  .name {
+    font-size: 2.5rem;   
+    margin: 10px 0;
+  }
+
+  .title {
+    font-size: 1.1rem;
+  }
+
+  .description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .hero-btns {
+    flex-direction: column;  
+    gap: 15px;
+    width: 100%;
+  }
+
+  .btn-cyan,
+  .btn-outline {
+    width: 100%;  
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+}
