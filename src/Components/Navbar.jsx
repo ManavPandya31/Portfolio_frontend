@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from "react";
-import "../css/navbar.css";
+import React from "react";
+import { useState, useEffect } from "react";
 import Logo from "../assets/Logo.png";
+import "../css/navbar.css";
 
 const Navbar = () => {
+  
   const [menuOpen, setMenuOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
 
