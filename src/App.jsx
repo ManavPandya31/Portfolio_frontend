@@ -9,11 +9,13 @@ import Experience from './Pages/Experience';
 import Certificates from './Pages/Certificates';
 import Contact from './Pages/Contact';
 import Footer from './Components/Footer';
+import Loader from './Components/Loader';
 import "./App.css";
 
 export default function App() {
   return (
     <div className="App">
+      <Loader/>
       <Navbar/>
       <Home />
       <About/>

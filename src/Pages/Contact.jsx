@@ -1,11 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
+import { useState } from "react";
 import axios from "axios";
+import { useDispatch } from "react-redux";
+import { showLoader, hideLoader } from "../Slices/loaderSlice.js";
 import "../css/connect.css";
 
 const Contact = () => {
 
   const [formData, setFormData] = useState({name: "",email: "",message: "",});
   const [loading, setLoading] = useState(false);
+  
+  const dispatch = useDispatch();
 
   const handleChange = (e) => {
     setFormData({
@@ -18,8 +23,7 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      setLoading(true);
-
+      dispatch(showLoader());
       const res = await axios.post(`${import.meta.env.VITE_API_URL}/api/contact`, formData);
       console.log("Response From Connect Api :-",res);
       
@@ -32,7 +36,7 @@ const Contact = () => {
       console.log(error);
 
     } finally {
-      setLoading(false);
+      dispatch(hideLoader());
     }
   };
 
