@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "../css/navbar.css";
+import Logo from "../assets/Logo.png";
 
 const Navbar = () => {
-  
   const [menuOpen, setMenuOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
 
@@ -24,26 +24,19 @@ const Navbar = () => {
     setMenuOpen(false);
   };
 
-
-useEffect(() => {
-  if (darkMode) {
-    document.body.classList.add("dark");
-  } else {
-    document.body.classList.remove("dark");
-  }
-}, [darkMode]);
-
+  useEffect(() => {
+    if (darkMode) {
+      document.body.classList.add("dark");
+    } else {
+      document.body.classList.remove("dark");
+    }
+  }, [darkMode]);
 
   return (
     <nav className="navbar">
-      <div
-        className="logo"
-        onClick={scrollToHome}
-        style={{ cursor: "pointer" }}
-      >
-        MP<span>.</span>
+      <div className="logo-wrapper" onClick={scrollToHome}>
+        <img src={Logo} alt="Logo" className="logo" />
       </div>
-
       <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
         ☰
       </div>
@@ -81,7 +74,6 @@ useEffect(() => {
         >
           {darkMode ? "Light ☀️" : "Dark 🌙"}
         </button> */}
-
       </div>
     </nav>
   );
