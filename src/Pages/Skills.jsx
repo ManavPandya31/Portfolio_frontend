@@ -17,7 +17,7 @@ const Skills = () => {
     },
      { 
       title: "Tools & Technologies", 
-      skills: ["Git & GitHub", "Postman" , "Netlify" , "Render" ],
+      skills: ["Git & GitHub", "Postman" , "Netlify" , "Render" , "Vercel"],
     },
   ];
 
