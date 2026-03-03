@@ -28,7 +28,7 @@ const Projects = () => {
         "Razorpay payment integration",
       ],
       tech: ["MongoDB", "Express.js", "React.js", "Node.js"],
-      liveLink: "https://shoppzo.netlify.app",
+      liveLink: "shoppzo.vercel.app",
       // githubLink: "https://github.com/ManavPandya31/shoppzo",
     },
   ];
