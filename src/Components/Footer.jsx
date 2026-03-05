@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram, FaSnapchat } from "react-icons/fa";
 // import { MdEmail } from "react-icons/md";
 import "../css/footer.css";
 
@@ -22,6 +22,22 @@ const Footer = () => (
         rel="noopener noreferrer"
       >
         <FaLinkedin />
+      </a>
+
+       <a 
+        href="https://www.instagram.com/manavpandya31/" 
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
+        <FaInstagram />
+      </a>
+
+        <a 
+        href="https://www.snapchat.com/@manav_pandya31" 
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
+        <FaSnapchat />
       </a>
 
       {/* <a href="manavpandya42@gmail.com">
