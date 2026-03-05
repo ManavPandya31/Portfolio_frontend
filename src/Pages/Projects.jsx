@@ -28,7 +28,7 @@ const Projects = () => {
         "Razorpay payment integration",
       ],
       tech: ["MongoDB", "Express.js", "React.js", "Node.js"],
-      liveLink: "https://shoppzo.vercel.app",
+      liveLink: "https://shoppzo.netlify.app/",
       // githubLink: "https://github.com/ManavPandya31/shoppzo",
     },
   ];
@@ -40,7 +40,7 @@ const Projects = () => {
         Featured <span>Projects</span>
       </h2>
       <p style={{ color: "var(--text-dim)", marginBottom: "30px" }}>
-        Some things I've built that I'm proud of.
+        Some Things I've Built That I'm Proud Of.
       </p>
 
       <div className="projects-list">

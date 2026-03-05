@@ -5,7 +5,7 @@ const Skills = () => {
   const stacks = [
     {
       title: "FRONTEND",
-      skills: ["React.js", "JavaScript", "CSS3"],
+      skills: ["React.js", "HTML", "CSS3"],
     },
     { 
       title: "BACKEND", 

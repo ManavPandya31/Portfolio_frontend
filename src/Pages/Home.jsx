@@ -18,7 +18,7 @@ const Hero = () => {
       </h1>
       <h2 className="title">MERN Stack Developer</h2>
       <p className="description">
-        Building scalable, user-friendly full-stack web applications with
+        Building Scalable, User-Friendly Full-Stack Web Applications With
         MongoDB, Express.js, React.js & Node.js.
       </p>
 

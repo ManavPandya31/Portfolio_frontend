@@ -33,10 +33,20 @@ const Experience = () => {
             </div>
 
             <ul className="exp-points">
-              <li>Developed full-stack features using the MERN stack</li>
-              <li>Built and maintained REST APIs for various application modules</li>
-              <li>Integrated Razorpay payment gateway for Soppzo</li>
-              <li>Implemented authentication & authorization using JWT tokens</li>
+              <li>Developed Full-Stack Features Using The MERN Stack</li>
+              <li>Implemented Authentication & Authorization Using JWT Tokens</li>
+              <li>Built and Maintained REST APIs For Various Application Modules</li>
+              <li>Integrated Razorpay Payment Gateway For Soppzo</li>
+            <li>
+                <a 
+                  href="/Certificate.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="certificate-link"
+                >
+                  Certificate
+                </a>
+              </li>
             </ul>
           </div>
         </div>

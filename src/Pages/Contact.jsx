@@ -47,7 +47,7 @@ const Contact = () => {
       </h2>
 
       <p className="contact-subtitle">
-        I’m open to opportunities. Feel free to reach out!
+        I’m Open To Opportunities. Feel Free To Reach Out!
       </p>
 
       <div className="contact-container">
