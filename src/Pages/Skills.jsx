@@ -5,15 +5,15 @@ const Skills = () => {
   const stacks = [
     {
       title: "FRONTEND",
-      skills: ["React.js", "HTML", "CSS3"],
+      skills: ["ReactJS", "HTML", "CSS3"],
     },
     { 
       title: "BACKEND", 
-      skills: ["Node.js", "Express.js","REST APIs", "JWT Authentication"], 
+      skills: ["NodeJS", "ExpressJS","NestJS","REST APIs", "JWT Authentication"], 
     },
     { 
       title: "Database", 
-      skills: ["MongoDB", "Mongoose" ],
+      skills: ["MongoDB", "Mongoose", "PostgreSQL", "Supabase" ],
     },
      { 
       title: "Tools & Technologies", 

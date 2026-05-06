@@ -16,7 +16,7 @@ const About = () => (
         <p>
           I Specialize in{" "}
           <span className="highlight">
-            MongoDB, Express.js, React.js, and Node.js.
+            MongoDB, Express.js, React.js, Node.js, TypeScript, PostgreSQL, Supabase
           </span>
         </p>
         <p>
@@ -30,10 +30,10 @@ const About = () => (
           <span>Name</span>
           <span>Manav Pandya</span>
         </div>
-        <div className="info-box">
+        {/* <div className="info-box">
           <span>Experience</span>
           <span>3 Months Internship</span>
-        </div>
+        </div> */}
         {/* <div className="info-box"><span>Education</span><span>BCA & MCA</span></div> */}
         <div className="info-box">
           <span>Location</span>
