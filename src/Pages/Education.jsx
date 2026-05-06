@@ -21,7 +21,7 @@ export default function Education() {
             <span className="edu-degree">MCA</span>
             <h3>Master of Computer Applications</h3>
 
-            <p className="edu-university">Marwadi University (NAAC A+ Accredited )</p>
+            <p className="edu-university">Marwadi University (NAAC A+ Accredited)</p>
 
             <div className="edu-location">
               <FaMapMarkerAlt className="location-icon" />
